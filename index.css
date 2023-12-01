@@ -2,9 +2,6 @@
     margin: 0;
 }
 
-body{
-    background-image: url(img/intro-pic.jpg);
-}
 header{
     background-color: #EEE9DA;
     padding: 10px;
@@ -12,6 +9,7 @@ header{
     color: #4682A9;
     text-align: right;
 }
+
 #about-nav,#blog-nav,#contact-nav{
     text-align: right;
     background-color: #EEE9DA;
