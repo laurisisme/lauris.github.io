@@ -16,6 +16,9 @@ header{
     padding-right: 50px;
 }
 
+nav a:hover{
+    background-color: #cfd8de;
+}
 
 #intro-pic{
     width: 100%;
