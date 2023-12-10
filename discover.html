@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | A Million Stories in One City</title>
+    <link rel="stylesheet" href="discover-stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="index.html" title="Back to homepage" id="home-nav"><b>Home</b></a>
+        <a href="about.html" title="Click to know more about our project" id="about-nav"><b>About</b></a>
+        <a href="discover.html" title="Read our journey in each city here" id="discover-nav"><b>Discover</b></a>
+        <a href="contact.html" title="Contact us now!" id="contact-nav"><b>Contact</b></a>
+        </nav>
+    </header>
+
+<section>
+<div class="main">
+    <p id="logo"><i class="fa fa-music" aria-hidden="true"></i></p>
+
+    <div class="left">
+        <img id="track_image">
+        <div class="volume"></div>
+
+        <p id="volume_show">90</p>
+        <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
+        <input type="range" min="0" max="100" value="90" onchange="volume_change()">
+    </div>
+    
+    <div class="right">
+        <div class="show_song_no">
+            <p id="present">1</p>
+            <p></p>
+            <p id="total">5</p>
+        </div>
+
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <div class="middle">
+            <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+            <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="duration">
+        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+    </div>
+    
+    </div>
+</div>
+</section>
+    
+</body>
+</html>
