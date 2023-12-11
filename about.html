@@ -9,11 +9,25 @@
 <body>
     <header>
         <nav>
-        <a href="index.html" title="Back to homepage" id="home-nav"><b>Home</b></a>
-        <a href="about.html" title="Click to know more about our project" id="about-nav"><b>About</b></a>
-        <a href="blog.html" title="Read our journey in each city here" id="blog-nav"><b>Blog</b></a>
-        <a href="contact.html" title="Contact us now!" id="contact-nav"><b>Contact</b></a>
-        </nav>
+            <div class="menu">
+            <a href="index.html" title="Back to homepage" id="home-nav"><b>Home</b></a>
+            <a href="about.html" title="Click to know more about our project" id="about-nav"><b>About</b></a>
+            <a href="discover.html" title="Read our journey in each city here" id="discover-nav"><b>Discover</b></a>
+            <a href="contact.html" title="Contact us now!" id="contact-nav"><b>Contact</b></a>
+            </div>
+        
+            <div class="navigation">
+                    <div class="dropdown">
+                        <button>Menu</button>
+                        <div class="ddcontent">
+                            <a href="index.html" title="Back to homepage" ><b>Home</b></a>
+                            <a href="about.html" title="Click to know more about our project" ><b>About</b></a>
+                            <a href="discover.html" title="Read our journey in each city here" ><b>Discover</b></a>
+                            <a href="contact.html" title="Contact us now!" ><b>Contact</b></a>
+                        </div>
+                    </div>
+            </div>
+            </nav>
 
         <h1 class="big-title">About</h1>
         <img src="img/team1.jpeg" class="head-img" alt="The photo of Xihu in Hangzhou">
@@ -42,9 +56,11 @@
 </section>
 
 <div class="img-container">
-    <img src="img/team2.jpg" alt="A photo of our team members">
-    <img src="img/team3.jpeg" alt="A photo of our team members">
-    <img src="img/team4.jpeg" alt="A photo of our team members">
+    <div class="images">
+    <img src="img/team2.jpg" alt="A photo of our team members" title="A photo of our team members" class="animate" style="--i:0;">
+    <img src="img/team3.jpeg" alt="A photo of our team members" title="A photo of our team members" class="animate" style="--i:1;">
+    <img src="img/team4.jpeg" alt="A photo of our team members" title="A photo of our team members" class="animate" style="--i:2;">
+    </div>
 </div>
 
 <div class="container2" id="team-about">
@@ -73,7 +89,7 @@
 </div>
 
 <div class="img-container2">
-    <img src="img/team5.jpg" alt="A photo of our team members">
+    <img src="img/team5.jpg" alt="A photo of our team members" title="A photo of our team members">
 </div>
 
 <div class="container3" id="funding-about">
@@ -88,6 +104,8 @@
     &copy; 2023 copy right reserved <br>
     <a href="mailto:av262@duke.edu">av262@duke.edu</a>
 </footer>
+
+<script src="about-script.js"></script>
 
 </body>
 </html>

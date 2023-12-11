@@ -9,11 +9,26 @@
 <body>
 <header>
     <nav>
+    <div class="menu">
     <a href="index.html" title="Back to homepage" id="home-nav"><b>Home</b></a>
     <a href="about.html" title="Click to know more about our project" id="about-nav"><b>About</b></a>
     <a href="discover.html" title="Read our journey in each city here" id="discover-nav"><b>Discover</b></a>
     <a href="contact.html" title="Contact us now!" id="contact-nav"><b>Contact</b></a>
+    </div>
+
+    <div class="navigation">
+            <div class="dropdown">
+                <button>Menu</button>
+                <div class="ddcontent">
+                    <a href="index.html" title="Back to homepage" ><b>Home</b></a>
+                    <a href="about.html" title="Click to know more about our project" ><b>About</b></a>
+                    <a href="discover.html" title="Read our journey in each city here" ><b>Discover</b></a>
+                    <a href="contact.html" title="Contact us now!" ><b>Contact</b></a>
+                </div>
+            </div>
+    </div>
     </nav>
+
 
     <h1 class="big-title">Listen.</h1>
     <img src="img/beach.png" class="beach" alt="The photo of a beach in Qingdao">
@@ -37,20 +52,22 @@
          own characters. And within this vibrant tapestry, lies a myriad of stories waiting to be told.</p>
 </div>
 
-<div class="container2">
-    <div class="item1">
-        <img src="img/hangzhou6.jpeg" title="Hangzhou" alt="A photo of Faxi Temple in Hangzhou" height="100%">
+<div class="hangzhou">
+    <div class="box1">
+        <img src="img/hangzhou6.jpeg" title="Hangzhou" alt="A photo of Faxi Temple in Hangzhou">
     </div>
 
-    <div class="item2">
+    <div class="box2">
         <h3 class="sub-title">Hangzhou</h3>
         <p class="text">Story of Nainai and her relation with her hometown, Hangzhou, through the recollection of her grandson.</p>
         <p class="text"><i>"As I grew older, I began to understand just how deep Nainai's love for Hangzhou ran. It wasn't just about the physical 
             beauty of the city or the memories she had there. It was about the sense of community and belonging she felt when she was there. 
             Despite the distance, Hangzhou would always hold a special place in her heart."</i></p>
     </div>
+</div>
 
-    <div class="item3">
+<div class="qingdao">
+    <div class="box1">
         <h3 class="sub-title">Qingdao</h3>
         <p class="text">A love poem from a visitor of Qingdao to the guy who had lit up her life in its darkest time.</p>
         <p class="text"><i>"You came into my world like a beacon of light, illuminating the darkness that had taken over me.
@@ -59,23 +76,28 @@
             Washing away all my fears."</i></p>
     </div>
 
-    <div class="item4">
-        <img src="img/qingdao1.jpg" title="Qingdao" alt="A photo of Qingdao" height="100%">
+    <div class="box2">
+        <img src="img/qingdao1.jpg" title="Qingdao" alt="A photo of Qingdao">
+    </div>
+</div>
+
+
+<div class="rizhao">
+    <div class="box1">
+        <img src="img/rizhao1.jpeg" title="Rizhao" alt="A photo of Rizhao">
     </div>
 
-    <div class="item5">
-        <img src="img/rizhao1.jpeg" title="Rizhao" alt="A photo of Rizhao" height="100%">
-    </div>
-
-    <div class="item6">
+    <div class="box2">
         <h3 class="sub-title">Rizhao</h3>
         <p class="text">A girl revisits the haunts of her youth after a decade of escaping from the grief brought on by her brother's death.</p>
         <p class="text"><i>"No matter how far she went or how hard she tried to forget, the memories and the pain always followed her.As the sun begins to set, 
             the girl stands up and wipes away her tears. She knows that it's time to leave, but she also knows that she will come back. 
             For the first time in a long time, she felt free from the weight of her grief"</i></p>
     </div>
+</div>
 
-    <div class="item7">
+<div class="shanghai">
+    <div class="box1">
         <h3 class="sub-title">Shanghai</h3>
         <p class="text">A busy city where all people pay their blood, sweat, and tears for a promising future.</p>
         <p class="text"><i>" It's a city where the rhythm of life is set to the relentless beat of ambition, a place where dreams are woven from 
@@ -83,16 +105,13 @@
             rather, blood, sweat, and tears, each drop a testament to the unyielding spirit of those who call it home."</i></p>
     </div>
 
-    <div class="item8">
-        <img src="img/shanghai2.jpeg" title="Shanghai" alt="A photo of Shanghai" height="100%">
+    <div class="box2">
+        <img src="img/shanghai2.jpeg" title="Shanghai" alt="A photo of Shanghai">
     </div>
 </div>
 
 <div class="img-container">
     <img src="img/hangzhou2.jpeg" alt="A photo of Xihu">
-    <img src="img/hangzhou3.jpeg" alt="A photo of Xihu"> 
-    <img src="img/hangzhou4.jpeg" alt="A photo of Xihu">
-    <img src="img/hangzhou5.jpg" alt="A photo of Xihu">
 </div>
 
 <div class="project">
@@ -118,6 +137,17 @@
     &copy; 2023 copy right reserved <br>
     <a href="mailto:av262@duke.edu">av262@duke.edu</a>
 </footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>"></script>
+
+<script>
+    var typed = new Typed(".big-title", {
+        strings: ["Listen.","Discover","With Sounds"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+</script>
 
 </body>
 </html>
