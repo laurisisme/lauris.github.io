@@ -5,13 +5,14 @@
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
 }
+
+/* building the navigation + hero image */
+/* i consult this youtube video: https://www.youtube.com/watch?v=TUD9999TbS0&list=LL&index=10&t=71s */
 
 header{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     overflow: hidden;
 }
@@ -25,7 +26,7 @@ header::after{
     background-color: rgba(0,0,0,0.05);
 }
 
-.beach{
+.head-img{
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -46,16 +47,52 @@ nav{
     color: #F6F4EB;
 }
 
-#home-nav{
+#about-nav{
     padding: 10px;
     border: 1px solid #4490b8;
     border-radius: 30px;
     background-color: #4490b8;
 }
-#about-nav:hover, #discover-nav:hover, #contact-nav:hover{
+#home-nav:hover, #discover-nav:hover, #contact-nav:hover{
     padding: 10px;
     border: 1px solid #4490b8;
     border-radius: 30px;
+    background-color: #4490b8;
+}
+
+.big-title{
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    width: 100%;
+    top: 40%;
+    text-align: left;
+    padding-left: 15%;
+    font-size: 7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-section{
+    position: absolute;
+    z-index: 30;
+    top: 63%;
+    text-align: left;
+    margin-left: 15%;
+    font-size: 1.1rem;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.nav-project, .nav-team, .nav-funding{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.nav-project:hover, .nav-team:hover, .nav-funding:hover{
+    padding: 10px;
     background-color: #4490b8;
 }
 
@@ -64,12 +101,12 @@ nav{
     float: right;
 }
 
-
+/* dropdown menu for phone interface */
  .dropdown a{
     text-decoration: none;
     display: block;
     padding: 5px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .dropdown button{
@@ -99,19 +136,6 @@ nav{
     display: inline-block;
 }
 
-.big-title{
-    position: absolute;
-    z-index: 30;
-    line-height: 4rem;
-    width: 100%;
-    top: 40%;
-    text-align: center;
-    font-size: 7em;
-    font-weight: 600;
-    color: #fff;
-}
-
-
 section{
     width: 100%;
     height: 100vh;
@@ -121,12 +145,14 @@ section{
 
 section .container1{
     width: 100%;
+    height: 100%;
     padding: 15%;
     color: #fff;
+    overflow: scroll;
 }
 
 p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding-top: 25px;
 }
 
@@ -135,7 +161,7 @@ p{
 }
 
 .sub-title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .shadow{
@@ -148,112 +174,63 @@ p{
     background: linear-gradient(to top, #151515, transparent);
 }
 
-.stories-intro{
-    color: #151515;
-    background-color: #fff;
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 10%;
-    padding-bottom: 5%;
-}
-
-
-.hangzhou, .qingdao, .rizhao, .shanghai{
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-    flex-direction: row;
-    column-gap: 100px;
-}
-
-.box1 {
-    width: 50%;
-    height: 350px;
-    text-align: justify;
-    justify-items: center;
-}
-.box2 {
-    height: 350px;
-    width: 50%;
-    text-align: justify;
-}
-
-img{
-    height: 100%;
-}
-
-.img-container{
-    width: 100%;
-    height: 100%;
-}
-
-.img-container img{
-    width: 100%;
-    height: 100%;
-    position: static;
-}
-
-.project{
-    width: 100%;
-    padding: 15%;
-    background-color: #fff;
-}
-
-.container3 .text{
-    text-align: justify;
-}
-
-.button{
-    width: 330px;
-    border: 2px solid #6096B4;
-    background: #6096B4;
-    border-radius: 30px;
-    margin-top: 3%;
-    padding: 20px;
-    font-size: 1.2em;
-    color: #151515;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 a{
     text-decoration: none;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background:#fff;
+    overflow: hidden;
+}
+
+.img-container .images img{
+max-width: 350px;
+margin: 0 30px;
+}
 
 
+.container2{
+    width: 100%;
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.container2 div{
+    margin-top: 20px;
+}
+
+.img-container2{
+    width: 100%;
+}
+
+.img-container2 img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.container3{
+    width: 100%;
+    padding: 15%;
+}
 
 footer{
     text-align: center;
-    background-color: #bfbbbb;
+    background-color: #F6F4EB;
     padding: 20px;
+    display: block;
+    clear: both;
 }
 
 @media screen and (max-width:600px) {
     body{
         width: 100%;
-    }
-
-    .hangzhou, .qingdao, .rizhao, .shanghai{
-        display: flex;
-        margin-left: 15%;
-        margin-right: 15%;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    .box1 {
-        width: 100%;
-        height: 300px;
-        text-align: justify;
-        justify-items: center;
-    }
-    .box2 {
-        height: 300px;
-        width: 100%;
-        text-align: justify;
     }
 
     .navigation {
@@ -266,5 +243,18 @@ footer{
 
     nav a{
         margin: 5px 0;
+    }
+
+    .nav-section{
+        position: absolute;
+        z-index: 30;
+        top: 63%;
+        text-align: left;
+        margin-left: 6%;
+        font-size: 1.1rem;
+        font-weight: 200;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #fff;
     }
 }

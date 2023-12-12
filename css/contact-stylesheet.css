@@ -68,6 +68,7 @@ nav{
     box-shadow: 2px 2px 5px grey;
     display: none;
     margin-right: 10px;
+    
 }
 
 .dropdown:hover .ddcontent{
@@ -80,11 +81,12 @@ nav{
 
 .dropdown{
     display: inline-block;
+    position: relative;
 }
 
 
 p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     position: relative;
     margin: auto;
     width: 100%;
@@ -94,11 +96,11 @@ p{
 
 
 .sub-title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-
+/* to make the form, i consult this video: https://www.youtube.com/watch?v=GU4sN7xxHkM&list=LL&index=5&t=174s */
 .container{
     background-color: #fff;
     width: 70%;
